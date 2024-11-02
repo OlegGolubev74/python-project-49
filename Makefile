@@ -21,5 +21,8 @@ package-install:
 #т.е. добавить ключ --force-reinstall. 
 #Эта команда, как и предыдущая работает только когда poetry shell уже exit
 
+package-reinstall:
+	python3 -m pip install --force-reinstall --break-system-packages --user dist/*.whl
+
 make lint:
 	poetry run flake8 brain_games
