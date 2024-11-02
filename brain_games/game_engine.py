@@ -6,6 +6,8 @@ def play_engine(questions):
     name = prompt.string('May I have your name? ')
     print("Hello, " + name + '!')
     # печатаем вопрос в текстовом виде
+    # всегда в списке questions элементов с инексом 2 идет
+    # общий вопрос в текстовом виде
     question_text = questions[2]
     print(question_text[2])
 
