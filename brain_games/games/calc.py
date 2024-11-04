@@ -4,7 +4,7 @@ import random
 # получить вопрос в математическом виде и правильный ответ на него
 def get_question_and_corr_answer():
     # вопрос в текстовом виде
-    question_text = 'What is the result of the expression?'
+    QUESTION_TEXT = 'What is the result of the expression?'
 
     # определяем аргументы
     math_operation = random.choice('+-*')
@@ -22,13 +22,13 @@ def get_question_and_corr_answer():
     elif math_operation == '*':
         corr_answer = str(num1 * num2)
     # записываем в tuple
-    return (question, corr_answer, question_text)
+    return (question, corr_answer, QUESTION_TEXT)
 
 
 # получаем наборы (вопрос в математическом виде + правильный ответ)
 # количество наборов равно количеству раундов
-def get_games(count):
-    result = []
-    for i in range(count):
-        result.append(get_question_and_corr_answer())
-    return result
+def get_games(count_of_rounds):
+    questions = []
+    for i in range(count_of_rounds):
+        questions.append(get_question_and_corr_answer())
+    return questions

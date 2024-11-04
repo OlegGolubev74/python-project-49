@@ -3,8 +3,8 @@ import prompt
 
 def play_engine(questions):
     print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, " + name + '!')
+    user_name = prompt.string('May I have your name? ')
+    print("Hello, " + user_name + '!')
     # печатаем общий вопрос в текстовом виде
     # всегда в списке questions элементов с инексом 2 идет
     # общий вопрос в текстовом виде
@@ -20,6 +20,6 @@ def play_engine(questions):
             print('"' + user_answer + '"'
                   + ' is wrong answer ;(. Correct answer was '
                   + '"' + corr_answer + '".')
-            print("Let\'s try again, " + name + "!")
+            print("Let\'s try again, " + user_name + "!")
             return
-    print("Congratulations, " + name + '!')
+    print("Congratulations, " + user_name + '!')
