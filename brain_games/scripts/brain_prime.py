@@ -4,8 +4,9 @@ import brain_games.games.prime
 
 
 def main():
-    count_of_rounds = 3
-    play_engine(brain_games.games.prime.get_games(count_of_rounds))
+    COUNT_OF_ROUNDS = 3
+    play_engine(brain_games.games.prime.get_games(COUNT_OF_ROUNDS),
+                brain_games.games.prime.QUESTION_TEXT)
 
 
 if __name__ == '__main__':

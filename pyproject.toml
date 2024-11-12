@@ -7,6 +7,11 @@ readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: POSIX :: Linux",
+  "Topic :: Games/Entertainment :: Puzzle Games"
+]
 repository = "https://github.com/OlegGolubev74/python-project-49"
 
 

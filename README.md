@@ -11,9 +11,10 @@ Brain Games is the package contains five simple mathematics quiz games:
 * Prime numbers
 
 ## Instalation
-* python3 -m pip install --user git+https://github.com/OlegGolubev74/python-project-49/.git
+* To install this package use command: python3 -m pip install --user git+https://github.com/OlegGolubev74/python-project-49/.git
+* Install package with command: make install
 
-# Start games
+## Start games
 * brain-even
 * brain-calc
 * brain-gcd

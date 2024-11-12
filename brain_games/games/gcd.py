@@ -1,34 +1,20 @@
 import random
+import math
 
 
-# получить вопрос в математическом виде и правильный ответ на него
+QUESTION_TEXT = 'Find the greatest common divisor of given numbers.'
+
+
 def get_question_and_corr_answer():
-    # вопрос в текстовом виде
-    QUESTION_TEXT = 'Find the greatest common divisor of given numbers.'
-    # определяем аргументы
     num1 = random.randint(1, 20)
     num2 = random.randint(1, 20)
-
-    # формируем строку для вопроса в математическом виде
     question = str(num1) + ' ' + str(num2)
-
-    # вычисляем правильный ответ
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
-        else:
-            num2 = num2 % num1
-
-    corr_answer = str(num1 + num2)
-
-    # записываем в tuple
-    return (question, corr_answer, QUESTION_TEXT)
+    corr_answer = str(math.gcd(num1, num2))
+    return (question, corr_answer)
 
 
-# получаем наборы (вопрос в математическом виде + правильный ответ)
-# количество наборов равно количеству раундов
-def get_games(count_of_rounds):
+def get_games(COUNT_OF_ROUNDS):
     questions = []
-    for i in range(count_of_rounds):
+    for i in range(COUNT_OF_ROUNDS):
         questions.append(get_question_and_corr_answer())
     return questions
