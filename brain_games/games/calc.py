@@ -14,13 +14,6 @@ def get_question_and_corr_answer():
     return (question, corr_answer)
 
 
-def get_games(COUNT_OF_ROUNDS):
-    questions = []
-    for i in range(COUNT_OF_ROUNDS):
-        questions.append(get_question_and_corr_answer())
-    return questions
-
-
 def calculate(num1, num2, math_operation):
     if math_operation == '+':
         corr_answer = str(operator.add(num1, num2))

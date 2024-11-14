@@ -4,8 +4,7 @@ import brain_games.games.calc
 
 
 def main():
-    COUNT_OF_ROUNDS = 3
-    play_engine(brain_games.games.calc.get_games(COUNT_OF_ROUNDS),
+    play_engine(brain_games.games.calc.get_question_and_corr_answer,
                 brain_games.games.calc.QUESTION_TEXT)
 
 

@@ -13,13 +13,6 @@ def get_question_and_corr_answer():
     return (question, corr_answer)
 
 
-def get_games(COUNT_OF_ROUNDS):
-    questions = []
-    for i in range(COUNT_OF_ROUNDS):
-        questions.append(get_question_and_corr_answer())
-    return questions
-
-
 def get_progression():
     start_num = random.randint(1, 10)
     diff = random.randint(1, 10)
